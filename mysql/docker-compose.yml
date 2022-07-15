@@ -1,0 +1,36 @@
+# Docker Compose Version
+#
+version : '3.8'
+
+# All the required softwares in seperate container
+services:
+
+    # Application Details
+    db:
+        image: mysql:latest
+        container_name: syntaxboardmysql
+        restart: always
+        environment:
+           MYSQL_ROOT_PASSWORD: sbroot
+           MYSQL_DATABASE: syntaxboard
+           MYSQL_USER: june2022
+           MYSQL_PASSWORD: june2022          
+        ports:
+         - 55822:3306
+         
+        # Location isn Container where the DB Data files are stored 
+        volumes:
+        -  ./db-data/db:/var/lib/mysql
+        
+        # Specify the Docker Network on which this application should reside
+        networks:
+        - syntaxboard
+
+# !! Important !! Build NETWORK ONLY IN ONE DOCKER IMAGE COMPONENT FOR ENTIRE PROJECT !!
+# This is DB Component
+# Build a custom network to make sure All Containers on the same network 
+# This enables containers to communicate with each other by Container Name
+# instead if IPs (which will change after ever docker reboot)
+networks:
+  syntaxboard:
+    driver: bridge
