@@ -22,6 +22,7 @@ docker image build -f Name of the Dockerfile (Default is 'PATH/Dockerfile')
 ```
 docker image pull [OPTIONS] NAME[:TAG|@DIGEST]
 docker image pull python:latest
+docker image pull postgress
 
 ```
 [Docker Image Pull Options](https://docs.docker.com/engine/reference/commandline/image_pull/))
@@ -42,6 +43,13 @@ docker ps
 
 ```
 [Docker Container List Options](https://docs.docker.com/engine/reference/commandline/ps/)
+
+### Docker Run Container
+```
+docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
+docker run 75993dd36176
+```
+[Docker Run Options](https://docs.docker.com/engine/reference/commandline/run/)
 
 ## Docker Network Commands
 
