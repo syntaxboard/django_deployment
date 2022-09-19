@@ -3,6 +3,6 @@
 
 ![Docker](Docker.png)
 
-## Docker vs Virtual Machines
+## Container vs Virtual Machines
 
 ![Virtual](container-vs-virtual-machine.png)
