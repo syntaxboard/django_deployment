@@ -6,6 +6,7 @@
 ```
 docker image ls [OPTIONS] [REPOSITORY[:TAG]]
 docker image ls
+
 ```
 [Docker Image List Options](https://docs.docker.com/engine/reference/commandline/image_ls/)
 
@@ -13,13 +14,32 @@ docker image ls
 ```
 docker image build [OPTIONS] PATH | URL | -
 docker image build -f Name of the Dockerfile (Default is 'PATH/Dockerfile')
-```
 
+```
+[Docker Image Build Options](https://docs.docker.com/engine/reference/commandline/image_build/)
+
+### Docker Image Pull
+```
+docker image pull [OPTIONS] NAME[:TAG|@DIGEST]
+docker image pull python:latest
+
+```
+[Docker Image Pull Options](https://docs.docker.com/engine/reference/commandline/image_pull/))
+
+### Docker Image Remove
+```
+docker image rm [OPTIONS] IMAGE [IMAGE...]
+docker image rm image id or image name
+docker rmi image id or image name
+
+```
+[Docker Image Remove Options](https://docs.docker.com/engine/reference/commandline/image_pull/))
 
 ### List Containers
 ```
 docker ps [OPTIONS]
 docker ps
+
 ```
 [Docker Container List Options](https://docs.docker.com/engine/reference/commandline/ps/)
 
@@ -29,6 +49,7 @@ docker ps
 ```
 docker network ls [OPTIONS]
 docker network ls
+
 ```
 [Docker Network List Options](https://docs.docker.com/engine/reference/commandline/network_ls/)
 
