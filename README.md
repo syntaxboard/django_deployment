@@ -49,7 +49,7 @@ docker ps
 docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
 docker run 75993dd36176
 ```
-[Docker Run Options](https://docs.docker.com/engine/reference/commandline/stop/)
+[Docker Run Options](https://docs.docker.com/engine/reference/commandline/run/)
 
 ### Docker Stop Container
 ```
@@ -57,7 +57,7 @@ docker stop [OPTIONS] CONTAINER [CONTAINER...]
 docker stop my_container
 
 ```
-[Docker Run Options](https://docs.docker.com/engine/reference/commandline/run/)
+[Docker Run Options](https://docs.docker.com/engine/reference/commandline/stop/)
 
 ## Docker Network Commands
 
