@@ -5,4 +5,4 @@
 
 ## Docker vs Virtual Machines
 
-![Virtual](/Container-vs-virtual-machine.png)
+![Virtual](container-vs-virtual-machine.png)
