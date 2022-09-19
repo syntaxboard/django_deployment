@@ -7,7 +7,7 @@
 docker network ls [OPTIONS]
 
 ```
-Options 
+#### Options 
 
 | Name          | Decription    |
 | ------------- | ------------- |
@@ -23,6 +23,8 @@ docker network connect [OPTIONS] NETWORK CONTAINER
 docker network connect "networkname" "containername"
 
 ```
+#### Options 
+
 | Name          |	Description   |
 | ------------- | ------------- |
 |--alias		        | Add network-scoped alias for the container|
